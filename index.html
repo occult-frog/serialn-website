@@ -3,11 +3,11 @@
     <head>
         <title>serialn</title>
         <style>@font-face {
-            font-family: 'JetBrainsMono';
+            font-family: JetBrainsMono;
             src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
             }
             .button {
-                font-family: 'JetBrainsMono';
+                font-family: JetBrainsMono;
                 width: 140px;
                 height: 37px;
                 border-radius: 5px;
@@ -18,22 +18,39 @@
 
             .getstartedbutton:hover {background-color: #e4a213;}
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
+
+            .gridcontainer {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: start;
+                width: 100%;
+            }
+            .lineelement {
+                grid-column: 1;
+                border: none;
+                border-top: 1px solid #31363C;
+                justify-self: center;
+            }
+            .featurestext {
+                grid-column: 1;
+                justify-self: start;
+            }
         </style>
     </head>
     <body style="background-color: #0E1116;">
         <div style="text-align: center;">
-            <p1 style="font-family: 'JetBrainsMono'; color: #E7EDF2; font-size: 50px;">
+            <p1 style="font-family: JetBrainsMono; color: #E7EDF2; font-size: 50px;">
             serialn
             </p1>
             <br>
-            <p2 style="color: #DDAA3F; font-family: 'JetBrainsMono'; font-size:34px">
+            <p2 style="color: #DDAA3F; font-family: JetBrainsMono; font-size:34px">
                 recipes in your terminal
             </p2>
             <br>
         </div>
 
         <div style="margin-top: 15px; width: 50ch; text-align: center; margin-inline: auto;">
-            <p3 style="color:#8D949D; font-family: 'JetBrainsMono'; font-size: 15px">
+            <p3 style="color:#8D949D; font-family: JetBrainsMono; font-size: 15px">
                 serialn brings your recipes into the terminal. Add, scale, and search
                 your recipes all via the command line.
             </p3>
@@ -47,8 +64,11 @@
                 View Commands
             </button>
         </div>
-        <div style="width: 850px; margin: auto; margin-top: 100px;">
-            <hr style="color:#1c222c;">
+        <div class="gridcontainer" style="margin: auto; font-family: JetBrainsMono;">
+            <hr class="lineelement" style="width: 850px; margin-top: 100px; margin-bottom: 100px;">
+            <p class="featurestext" style="color: #E7EDF2; font-size: 20px;">
+                Features
+            </p>
         </div>
     </body>
 </html>
