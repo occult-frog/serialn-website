@@ -7,6 +7,10 @@
                 font-family: JetBrainsMono;
                 src: url('./fonts/JetBrainsMono-Regular.woff2') format('woff2');
             }
+            @font-face {
+                font-family: JetBrainsMonoBold;
+                src: url(./fonts/JetBrainsMono-Bold.woff2) format('woff2');
+            }
             .button {
                 font-family: JetBrainsMono;
                 width: 140px;
@@ -40,11 +44,11 @@
     </head>
     <body style="background-color: #0E1116;">
         <div style="text-align: center;">
-            <p1 style="font-family: JetBrainsMono; color: #E7EDF2; font-size: 50px;">
+            <p1 style="font-family: JetBrainsMonoBold; color: #E7EDF2; font-size: 50px; font: bold;">
             serialn
             </p1>
             <br>
-            <p2 style="color: #DDAA3F; font-family: JetBrainsMono; font-size:34px">
+            <p2 style="color: #DDAA3F; font-family: JetBrainsMonoBold; font-size:34px; font: bold;">
                 recipes in your terminal
             </p2>
             <br>
@@ -65,11 +69,13 @@
                 View Commands
             </button>
         </div>
-        <div class="gridcontainer" style="margin: auto; font-family: JetBrainsMono;">
+
+        <div class="gridcontainer" style="margin: auto; font-family: JetBrainsMonoBold; margin-bottom: 1px;">
             <hr class="lineelement" style="width: 1000px; margin-top: 80px; margin-bottom: 80px;">
             <p class="featurestext" style="color: #E7EDF2; font-size: 30px; margin-left: 13%;">
                 Features
             </p>
         </div>
+
     </body>
 </html>
