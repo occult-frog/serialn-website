@@ -12,8 +12,9 @@
                 src: url(./fonts/JetBrainsMono-Bold.woff2) format('woff2');
             }
             .button {
-                font-family: JetBrainsMono;
+                font-family: JetBrainsMonoBold;
                 width: 140px;
+                font-size: 15px;
                 height: 37px;
                 border-radius: 5px;
                 border: 1px solid
@@ -23,23 +24,6 @@
 
             .getstartedbutton:hover {background-color: #e4a213;}
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
-
-            .gridcontainer {
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-items: start;
-                width: 100%;
-            }
-            .lineelement {
-                grid-column: 1;
-                border: none;
-                border-top: 1px solid #31363C;
-                justify-self: center;
-            }
-            .featurestext {
-                grid-column: 1;
-                justify-self: start;
-            }
         </style>
     </head>
     <body style="background-color: #0E1116;">
@@ -70,12 +54,10 @@
             </button>
         </div>
 
-        <div class="gridcontainer" style="margin: auto; font-family: JetBrainsMonoBold; margin-bottom: 1px;">
-            <hr class="lineelement" style="width: 1000px; margin-top: 80px; margin-bottom: 80px;">
-            <p class="featurestext" style="color: #E7EDF2; font-size: 30px; margin-left: 13%;">
+        <hr style="width: 87%; margin-top: 100px; margin-bottom: 100px; border: none; border-top: 1px solid #31363C;">
+        <p style="color: #E7EDF2; font-size: 30px; margin-left: 10%; font-family: JetBrainsMonoBold;">
                 Features
-            </p>
-        </div>
+        </p>
 
     </body>
 </html>
