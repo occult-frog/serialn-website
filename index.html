@@ -19,8 +19,8 @@
                 border-radius: 5px;
                 border: 1px solid
             }
-            .getstartedbutton {background-color: #DDAA3F; border-color: #DDAA3F; transition: background-color 0.3s ease-in-out;}
-            .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.3s ease-in-out; transition: border-color 0.3 ease-in-out;}
+            .getstartedbutton {background-color: #DDAA3F; border-color: #DDAA3F; transition: background-color 0.2s ease-in-out;}
+            .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.2s ease-in-out; transition: border-color 0.3 ease-in-out;}
 
             .getstartedbutton:hover {background-color: #e4a213;}
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
@@ -57,8 +57,26 @@
                 flex: 1;
             }
 
+            .navbutton {
+                color: #8D949D;
+                background-color: #0E1116;
+                border: none;
+                font-size: 15px;
+                font-family: JetBrainsMonoBold;
+                border-radius: 5px;
+                height: 3ch;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            .navbutton:hover {background-color: #1c222c;}
+
         </style>
     </head>
+    <nav style="color: #8D949D; font-size: 10px; font-family: JetBrainsMonoBold;">
+        <button class="navbutton" onclick="document.location.href='index.html'" style="width: 6ch">Home</button>
+        <button class="navbutton" style="width: 10ch">Commands</button>
+        <button class="navbutton" style="width: 9ch">Install</button>
+    </nav>
     <body style="background-color: #0E1116;">
         <div style="text-align: center;">
             <p1 style="font-family: JetBrainsMonoBold; color: #E7EDF2; font-size: 50px; font: bold;">
