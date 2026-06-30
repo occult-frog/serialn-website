@@ -39,10 +39,22 @@
                 flex: 1;
                 border: 1px solid;
                 border-radius: 5px;
-                border-color: #1c222c;
+                border-color: #2a313c;
                 width: auto;
-                height: 20ch;
+                height: 22ch;
                 text-align: left;
+                background-color: #1c222c;
+                transition: height 0.2s ease-in-out;
+            }
+
+            .commandsbox:hover {border-color: #DDAA3F; background-color: #252a32; height: 23ch;}
+
+            .commandsrow {
+                display: flex;
+                gap: 15px;
+                width: 60%;
+                flex-direction: row;
+                flex: 1;
             }
 
         </style>
@@ -80,8 +92,8 @@
         </p>
 
         <center>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="display: flex; gap: 15px; width: 60%;">
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                <div style="display: flex; gap: 15px; width: 60%; flex-direction: row;">
                     <div class="featuresbox">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%;">
                             Local Storage
@@ -101,7 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div style="display: flex; gap: 15px; width: 60%;">
+                <div style="display: flex; gap: 15px; width: 60%; flex-direction: row;">
                     <div class="featuresbox">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%;">
                             Scale
@@ -130,8 +142,8 @@
         </p>
 
         <center>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="display: flex; gap: 15px; width: 60%;">
+            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                <div class="commandsrow">
                     <div class="commandsbox">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             list-recipes
@@ -172,87 +184,75 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div style="display: flex; gap: 15px; width: 60%;">
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        add-recipe
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        add-recipe [RECIPENAME]
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        Add a new recipe to your collection interactively.
-                    </p>
+                <div class="commandsrow">
+                    <div class="commandsbox">
+                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
+                            add-recipe
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
+                            add-recipe [RECIPENAME]
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
+                            Add a new recipe to your collection interactively.
+                        </p>
+                    </div>
+                    <div class="commandsbox">
+                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
+                            remove-recipe
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
+                            remove-recipe [RECIPENAME]
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
+                            Remove a recipe from your collection permanently.
+                        </p>
+                    </div>
+                    <div class="commandsbox">
+                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
+                            search-tags
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
+                            search-tags [TAGS]
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
+                            Search recipes across your collection by their tags.
+                        </p>
+                    </div>
                 </div>
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        remove-recipe
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        remove-recipe [RECIPENAME]
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        Remove a recipe from your collection permanently.
-                    </p>
-                </div>
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        search-tags
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        search-tags [TAGS]
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        Search recipes across your collection by their tags.
-                    </p>
-                </div>
-            </div>
-            <div style="display: flex; gap: 15px; width: 60%;">
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        add-tags
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        add-tags [OPTIONS] [RECIPENAME] [TAGS]
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        Add tags to your recipes to organize your collection.
-                    </p>
-                </div>
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        edit-recipe
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        edit-recipe [RECIPENAME] [OPTIONS]
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        Edit parts of your recipes like ingredients, steps, and extra notes.
-                    </p>
-                </div>
-                <div class="commandsbox">
-                    <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
-                        
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
-                        
-                    </p>
-                    <br>
-                    <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
-                        
-                    </p>
+                <div class="commandsrow">
+                    <div class="commandsbox">
+                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
+                            add-tags
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
+                            add-tags [OPTIONS] [RECIPENAME] [TAGS]
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
+                            Add tags to your recipes to organize your collection.
+                        </p>
+                    </div>
+                    <div class="commandsbox">
+                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
+                            edit-recipe
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 14px; color: #89BEFA; margin: 2%; margin-bottom: 0;">
+                            edit-recipe [RECIPENAME] [OPTIONS]
+                        </p>
+                        <br>
+                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
+                            Edit parts of your recipes like ingredients, steps, and extra notes.
+                        </p>
+                    </div>
+                    <div class="commandsbox" style="border: none; background-color: #0E1116;"></div>
                 </div>
             </div>
         </center>
