@@ -59,9 +59,35 @@
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
 
 
+            .navbutton {
+                color: #8D949D;
+                background-color: #0E1116;
+                border: none;
+                font-size: 15px;
+                font-family: JetBrainsMono;
+                border-radius: 5px;
+                height: 3ch;
+                transition: background-color 0.2s ease-in-out;
+                flex: 1;
+                margin-right: 1ch;
+            }
+
+            .navbutton:hover {background-color: #1c222c; color: #E7EDF2}
+
+
         </style>
     </head>
     <body style="background-color: #0E1116;">
+        <div style="display: flex; flex-direction: row; margin-top: 2ch;">
+            <nav>
+                <button style="font-family: JetBrainsMono; font-size: 20px; color: #E7EDF2; flex: 1; border: none; background-color: #0E1116; margin-right: 2ch;">serialn</button>
+                <button class="navbutton" onclick="document.location.href='../index.html'" style="width: 6ch">Home</button>
+                <button class="navbutton" style="width: 10ch">Commands</button>
+                <button class="navbutton" style="width: 9ch">Install</button>
+            </nav>
+        </div>
+
+        <hr style="width: 100%; margin-top: 2ch; margin-bottom: 100px; border: none; border-top: 1px solid #31363C;">
         <p style="font-family: JetBrainsMonoBold; font-size: 35px; color: #DDAA3F; margin-left: 22%;">
             add-recipe
         </p>
