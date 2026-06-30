@@ -58,6 +58,23 @@
             .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.3s ease-in-out; transition: border-color 0.3 ease-in-out;}
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
 
+            .optionstable {
+                font-family: JetBrainsMono;
+                margin-left: 22%;
+                font-size: 11px;
+                border-collapse: collapse;
+                width: 56%;
+            }
+
+            .optionscell {
+                padding-top: 2ch;
+                padding-right: auto;
+                padding-bottom: 2ch;
+                border: 1px solid #1F2329;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
 
         </style>
     </head>
@@ -81,21 +98,21 @@
             OPTIONS
         </p>
         <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
-        <table style="border: none; font-family: JetBrainsMono;">
-            <tr>
-                <th>Flag</th>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Default</th>
+        <table class="optionstable">
+            <tr style="text-align: left; color: #8D949D;">
+                <th class="optionscell">Flag</th>
+                <th class="optionscell">Type</th>
+                <th class="optionscell">Description</th>
+                <th class="optionscell">Default</th>
             </tr>
-            <tr>
-                <td>--scale, -s</td>
-                <td>int</td>
-                <td>Scale recipes by this many times</td>
-                <td>1</td>
+            <tr style="text-align: left; color: #E7EDF2;">
+                <td class="optionscell">--scale, -s</td>
+                <td class="optionscell">int</td>
+                <td class="optionscell">Scale recipes by this many times</td>
+                <td class="optionscell">1</td>
             </tr>
         </table>
-        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%;">
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
             EXAMPLES
         </p>
         <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
