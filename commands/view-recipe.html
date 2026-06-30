@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                    font-family: JetBrainsMono;
+                    src: url('JetBrainsMono-Regular.woff2') format('woff2');
+                }
+            @font-face {
+                    font-family: JetBrainsMonoBold;
+                    src: url('JetBrainsMono-Bold.woff2') format('woff2');
+                }
+
+            .codebox {
+                display: flex;
+                flex-direction: row;
+                margin-left: 22%;
+                height: 6ch;
+                color: #E7EDF2;
+                background-color: #171B21;
+                width: 56%;
+                align-items: center;
+                font-family: JetBrainsMono;
+                font-size: 15px;
+                margin-top: 2%;
+                margin-bottom: 4%;
+                border: 1px solid #31363C;
+            }
+
+            .infobox {
+                display: flex;
+                flex-direction: row;
+                margin-left: 22%;
+                width: 56%;
+                align-items: center;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                font-family: JetBrainsMono;
+                margin-top: 2%;
+                height: 5ch;
+                background-color: #1D2127;
+                color: #8D949D;
+                font-size: 12px;
+                margin-bottom: -2%;
+                border: 1px solid #31363C;
+            }
+
+            .button {
+                font-family: JetBrainsMonoBold;
+                width: 140px;
+                font-size: 15px;
+                height: 37px;
+                border-radius: 5px;
+                border: 1px solid;
+                margin-left: 22%;
+            }
+            
+            .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.3s ease-in-out; transition: border-color 0.3 ease-in-out;}
+            .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
+
+
+        </style>
+    </head>
+    <body style="background-color: #0E1116;">
+        <p style="font-family: JetBrainsMonoBold; font-size: 35px; color: #DDAA3F; margin-left: 22%;">
+            view-recipe
+        </p>
+        <p style="font-family: JetBrainsMono; font-size: 15pxpx; color: #8D949D; margin-left: 22%; margin-top: -2%;">
+            Display the full recipe scaled by 1 or more.
+        </p>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
+            SYNTAX
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <div class="codebox" style="border-radius: 5px;">
+            <p style="margin-left: 2%;">
+                view-recipe [RECIPENAME] [OPTIONS]
+            </p>
+        </div>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
+            OPTIONS
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <table style="border: none; font-family: JetBrainsMono;">
+            <tr>
+                <th>Flag</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Default</th>
+            </tr>
+            <tr>
+                <td>--scale, -s</td>
+                <td>int</td>
+                <td>Scale recipes by this many times</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%;">
+            EXAMPLES
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div class="infobox">
+                <p style="margin-left: 2%;">
+                    Lists all recipes
+                </p>
+            </div>
+            <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                <p style="margin-left: 2%;">
+                    list-recipes
+                </p>
+            </div>
+        </div>
+        <button class="button commandsbutton">All Commands</button>
+    </body>
+</html>
