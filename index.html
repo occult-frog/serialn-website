@@ -13,7 +13,7 @@
             }
             .button {
                 font-family: JetBrainsMonoBold;
-                width: 140px;
+                width: 170px;
                 font-size: 15px;
                 height: 37px;
                 border-radius: 5px;
@@ -82,7 +82,7 @@
                 Get Started
             </button>
             <button class="button commandsbutton">
-                View Commands
+                View Commands ->
             </button>
         </div>
 
@@ -144,7 +144,7 @@
         <center>
             <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
                 <div class="commandsrow">
-                    <div class="commandsbox">
+                    <button class="commandsbox" onclick="document.location.href='commands/list-recipes.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             list-recipes
                         </p>
@@ -156,8 +156,8 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             List all recipes from your collection in a neat and ordered manner.
                         </p>
-                    </div>
-                    <div class="commandsbox">
+                    </button>
+                    <button class="commandsbox"  onclick="document.location.href='commands/view-recipe.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             view-recipe
                         </p>
@@ -169,8 +169,8 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Display the full recipe scaled by 1 or more.
                         </p>
-                    </div>
-                    <div class="commandsbox">
+                    </button>
+                    <button class="commandsbox"  onclick="document.location.href='commands/refresh-recipes.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             refresh-recipes
                         </p>
@@ -182,10 +182,10 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Sync and keep track of your recipe collection via a recipe index.
                         </p>
-                    </div>
+                    </button>
                 </div>
                 <div class="commandsrow">
-                    <div class="commandsbox">
+                    <button class="commandsbox"  onclick="document.location.href='commands/add-recipe.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             add-recipe
                         </p>
@@ -197,8 +197,8 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Add a new recipe to your collection interactively.
                         </p>
-                    </div>
-                    <div class="commandsbox">
+                    </button>
+                    <button class="commandsbox"  onclick="document.location.href='commands/remove-recipe.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             remove-recipe
                         </p>
@@ -210,8 +210,8 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Remove a recipe from your collection permanently.
                         </p>
-                    </div>
-                    <div class="commandsbox">
+                    </button>
+                    <button class="commandsbox"  onclick="document.location.href='commands/search-tags.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             search-tags
                         </p>
@@ -223,10 +223,10 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Search recipes across your collection by their tags.
                         </p>
-                    </div>
+                    </button>
                 </div>
                 <div class="commandsrow">
-                    <div class="commandsbox">
+                    <button class="commandsbox"  onclick="document.location.href='commands/add-tags.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             add-tags
                         </p>
@@ -238,8 +238,8 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Add tags to your recipes to organize your collection.
                         </p>
-                    </div>
-                    <div class="commandsbox">
+                    </button>
+                    <button class="commandsbox"  onclick="document.location.href='commands/edit-recipe.html'">
                         <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%; margin-bottom: 0;">
                             edit-recipe
                         </p>
@@ -251,7 +251,7 @@
                         <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%; margin-bottom: 0;">
                             Edit parts of your recipes like ingredients, steps, and extra notes.
                         </p>
-                    </div>
+                    </button>
                     <div class="commandsbox" style="border: none; background-color: #0E1116;"></div>
                 </div>
             </div>
