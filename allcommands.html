@@ -11,29 +11,6 @@
                 font-family: JetBrainsMonoBold;
                 src: url('./fonts/JetBrainsMono-Bold.woff2') format('woff2');
             }
-            .button {
-                font-family: JetBrainsMonoBold;
-                width: 170px;
-                font-size: 15px;
-                height: 37px;
-                border-radius: 5px;
-                border: 1px solid
-            }
-            .getstartedbutton {background-color: #DDAA3F; border-color: #DDAA3F; transition: background-color 0.2s ease-in-out;}
-            .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.2s ease-in-out; transition: border-color 0.3 ease-in-out;}
-
-            .getstartedbutton:hover {background-color: #e4a213;}
-            .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
-
-            .featuresbox {
-                flex: 1;
-                border: 1px solid;
-                border-radius: 5px;
-                border-color: #1c222c;
-                width: auto;
-                height: 15ch;
-                text-align: left;
-            }
 
             .commandsbox {
                 flex: 1;
@@ -71,101 +48,25 @@
             }
 
             .navbutton:hover {background-color: #1c222c; color: #E7EDF2}
-
         </style>
     </head>
-
     <body style="background-color: #0E1116;">
         <div style="display: flex; flex-direction: row; margin-top: 2ch;">
             <nav>
                 <button style="font-family: JetBrainsMono; font-size: 20px; color: #E7EDF2; flex: 1; border: none; background-color: #0E1116; margin-right: 2ch;">serialn</button>
                 <button class="navbutton" onclick="document.location.href='index.html'" style="width: 6ch">Home</button>
-                <button class="navbutton" onclick="document.location.href='allcommands.html'" style="width: 10ch">Commands</button>
+                <button class="navbutton" onclick="document.location.href='allcommands.html'" style="width: 10ch; color: #DDAA3F;">Commands</button>
                 <button class="navbutton" style="width: 9ch">Install</button>
             </nav>
         </div>
 
         <hr style="width: 100%; margin-top: 2ch; margin-bottom: 100px; border: none; border-top: 1px solid #31363C;">
 
-        <div style="text-align: center;">
-            <p1 style="font-family: JetBrainsMonoBold; color: #E7EDF2; font-size: 50px; font: bold;">
-            serialn
-            </p1>
-            <br>
-            <p2 style="color: #DDAA3F; font-family: JetBrainsMonoBold; font-size:34px; font: bold;">
-                recipes in your terminal
-            </p2>
-            <br>
-        </div>
-
-        <div style="margin-top: 15px; width: 50ch; text-align: center; margin-inline: auto;">
-            <p3 style="color:#8D949D; font-family: JetBrainsMono; font-size: 15px;">
-                serialn brings your recipes into the terminal. Add, scale, and search through your recipes all via the command line.
-            </p3>
-        </div>
-
-        <div style="margin-top: 40px; text-align: center;">
-            <button class="button getstartedbutton" style="margin-right: 10px;">
-                Get Started
-            </button>
-            <button class="button commandsbutton">
-                View Commands ->
-            </button>
-        </div>
-
-        <hr style="width: 87%; margin-top: 100px; margin-bottom: 100px; border: none; border-top: 1px solid #31363C;">
-        <p style="color: #E7EDF2; font-size: 30px; margin-left: 10%; font-family: JetBrainsMonoBold;">
-                Features
+        <p style="color: #E7EDF2; font-size: 30px; margin-left: 20%; font-family: JetBrainsMonoBold;">
+                All Commands
         </p>
-
-        <center>
-            <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
-                <div style="display: flex; gap: 15px; width: 60%; flex-direction: row;">
-                    <div class="featuresbox">
-                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%;">
-                            Local Storage
-                        </p>
-                        <br>
-                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%;">
-                            Store recipes locally in the form of csv files.
-                        </p>
-                    </div>
-                    <div class="featuresbox">
-                        <p style="font-family: JetBrainsMonoBold; font-size: 15pxpx; color: #E7EDF2; margin: 2%;">
-                            Search
-                        </p>
-                        <br>
-                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%;">
-                            Search recipes by name and tags.
-                        </p>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 15px; width: 60%; flex-direction: row;">
-                    <div class="featuresbox">
-                        <p style="font-family: JetBrainsMonoBold; font-size: 15px; color: #E7EDF2; margin: 2%;">
-                            Scale
-                        </p>
-                        <br>
-                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%;">
-                            Scale any recipe by any number of times and get correct measurements automatically
-                        </p>
-                    </div>
-                    <div class="featuresbox">
-                        <p style="font-family: JetBrainsMonoBold; font-size: 15pxpx; color: #E7EDF2; margin: 2%;">
-                            Tags
-                        </p>
-                        <br>
-                        <p style="font-family: JetBrainsMono; font-size: 12px; color: #8D949D; margin: 2%;">
-                            Organize recipes by cuisine, diet, season, or any tag you want.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </center>
-
-        <hr style="width: 87%; margin-top: 100px; margin-bottom: 100px; border: none; border-top: 1px solid #31363C;">
-        <p style="color: #E7EDF2; font-size: 30px; margin-left: 10%; font-family: JetBrainsMonoBold;">
-                Commands
+        <p style="color: #8D949D; font-size: 15px; margin-left: 20%; font-family: JetBrainsMono; margin-bottom: 4%;">
+                Click a command for use, options, and examples.
         </p>
 
         <center>
