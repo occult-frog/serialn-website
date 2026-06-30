@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                    font-family: JetBrainsMono;
+                    src: url('JetBrainsMono-Regular.woff2') format('woff2');
+                }
+            @font-face {
+                    font-family: JetBrainsMonoBold;
+                    src: url('JetBrainsMono-Bold.woff2') format('woff2');
+                }
+
+            .codebox {
+                display: flex;
+                flex-direction: row;
+                margin-left: 22%;
+                height: 6ch;
+                color: #E7EDF2;
+                background-color: #171B21;
+                width: 56%;
+                align-items: center;
+                font-family: JetBrainsMono;
+                font-size: 15px;
+                margin-top: 2%;
+                margin-bottom: 4%;
+                border: 1px solid #31363C;
+            }
+
+            .infobox {
+                display: flex;
+                flex-direction: row;
+                margin-left: 22%;
+                width: 56%;
+                align-items: center;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                font-family: JetBrainsMono;
+                margin-top: 2%;
+                height: 5ch;
+                background-color: #1D2127;
+                color: #8D949D;
+                font-size: 12px;
+                margin-bottom: -2%;
+                border: 1px solid #31363C;
+            }
+
+            .button {
+                font-family: JetBrainsMonoBold;
+                width: 140px;
+                font-size: 15px;
+                height: 37px;
+                border-radius: 5px;
+                border: 1px solid;
+                margin-left: 22%;
+            }
+            
+            .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.3s ease-in-out; transition: border-color 0.3 ease-in-out;}
+            .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
+
+            .optionstable {
+                font-family: JetBrainsMono;
+                margin-left: 22%;
+                font-size: 11px;
+                border-collapse: collapse;
+                width: 56%;
+            }
+
+            .optionscell {
+                padding-top: 2ch;
+                padding-right: auto;
+                padding-bottom: 2ch;
+                border: 1px solid #1F2329;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #0E1116;">
+        <p style="font-family: JetBrainsMonoBold; font-size: 35px; color: #DDAA3F; margin-left: 22%;">
+            add-tags
+        </p>
+        <p style="font-family: JetBrainsMono; font-size: 15pxpx; color: #8D949D; margin-left: 22%; margin-top: -2%; width: 56%;">
+            Appends to or overwrites the tags for a given recipe. For the tags option pass --tag or -t along with the tag or leave it blank to assign an empty tag to the recipe. -o or --overwrite can be passed as options to overwrite the current tags. Don't pass the recipe name as [RECIPENAME].csv. Pass it without the extension. If the recipe name argument is left blank then a list of recipes with a number next to them will be shown. Choose a number from the list to add tags to that recipe.
+        </p>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
+            SYNTAX
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <div class="codebox" style="border-radius: 5px;">
+            <p style="margin-left: 2%;">
+                add-tags [OPTIONS] [RECIPENAME] [TAGS]
+            </p>
+        </div>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
+            OPTIONS
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <table class="optionstable">
+            <tr style="text-align: left; color: #8D949D;">
+                <th class="optionscell">Flag</th>
+                <th class="optionscell">Type</th>
+                <th class="optionscell">Description</th>
+                <th class="optionscell">Default</th>
+            </tr>
+            <tr style="text-align: left; color: #E7EDF2;">
+                <td class="optionscell">--tag, -t</td>
+                <td class="optionscell">string</td>
+                <td class="optionscell">Tags to be added</td>
+                <td class="optionscell">no_tags</td>
+            </tr>
+            <tr style="text-align: left; color: #E7EDF2;">
+                <td class="optionscell">--overwrite, -o</td>
+                <td class="optionscell">boolean</td>
+                <td class="optionscell">Decides whether current tags should be overwritten</td>
+                <td class="optionscell">False</td>
+            </tr>
+        </table>
+        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
+            EXAMPLES
+        </p>
+        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div class="infobox">
+                <p style="margin-left: 2%;">
+                    Overwrites recipe1's current tags with #tag1
+                </p>
+            </div>
+            <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                <p style="margin-left: 2%;">
+                    add-tags recipe1 -t #tag1 -o
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div class="infobox" style="margin-top: -2%;">
+                <p style="margin-left: 2%;">
+                    Appends #tag1 to recipe1's current tags
+                </p>
+            </div>
+            <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                <p style="margin-left: 2%;">
+                    add-tags recipe1 -t #tag1
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0px;">
+            <div class="infobox" style="margin-top: -2%;">
+                <p style="margin-left: 2%;">
+                    Overwrites recipe1's current tags with no_tags
+                </p>
+            </div>
+            <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                <p style="margin-left: 2%;">
+                    add-tags recipe1 -o
+                </p>
+            </div>
+        </div>
+        <button class="button commandsbutton">All Commands</button>
+    </body>
+</html>
