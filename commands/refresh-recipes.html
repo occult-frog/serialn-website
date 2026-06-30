@@ -58,32 +58,15 @@
             .commandsbutton {background-color: #121720; border-color: #1c222c; color: white; transition: background-color 0.3s ease-in-out; transition: border-color 0.3 ease-in-out;}
             .commandsbutton:hover {background-color: #1c222c; border-color: #E7EDF2;}
 
-            .optionstable {
-                font-family: JetBrainsMono;
-                margin-left: 22%;
-                font-size: 11px;
-                border-collapse: collapse;
-                width: 56%;
-            }
-
-            .optionscell {
-                padding-top: 2ch;
-                padding-right: auto;
-                padding-bottom: 2ch;
-                border: 1px solid #1F2329;
-                border-top: none;
-                border-left: none;
-                border-right: none;
-            }
 
         </style>
     </head>
     <body style="background-color: #0E1116;">
         <p style="font-family: JetBrainsMonoBold; font-size: 35px; color: #DDAA3F; margin-left: 22%;">
-            view-recipe
+            refresh-recipes
         </p>
         <p style="font-family: JetBrainsMono; font-size: 15pxpx; color: #8D949D; margin-left: 22%; margin-top: -2%; width: 56%;">
-            Allows you to view a recipe. Don't pass the recipe name as [RECIPENAME].csv. Pass it without the extension. If the recipe name argument is left blank then a list of recipes with a number next to them will be shown. Choose a number from the list to view that recipe. Pass --scale or -s and then a number to scale it by that. The default scale is 1.
+            Takes all recipes present in the recipes folder and adds their name to the recipeindex.csv file. This command overwrites all the other recipe names in the recipeindex.csv file. 
         </p>
         <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
             SYNTAX
@@ -91,27 +74,9 @@
         <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
         <div class="codebox" style="border-radius: 5px;">
             <p style="margin-left: 2%;">
-                view-recipe [RECIPENAME] [OPTIONS]
+                refresh-recipes
             </p>
         </div>
-        <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
-            OPTIONS
-        </p>
-        <hr style="width: 56%; border: none; border-top: 1px solid #31363C;">
-        <table class="optionstable">
-            <tr style="text-align: left; color: #8D949D;">
-                <th class="optionscell">Flag</th>
-                <th class="optionscell">Type</th>
-                <th class="optionscell">Description</th>
-                <th class="optionscell">Default</th>
-            </tr>
-            <tr style="text-align: left; color: #E7EDF2;">
-                <td class="optionscell">--scale, -s</td>
-                <td class="optionscell">int</td>
-                <td class="optionscell">Scale recipes by this many times</td>
-                <td class="optionscell">1</td>
-            </tr>
-        </table>
         <p style="font-family: JetBrainsMonoBold; font-size: 12px; color: #8D949D; margin-left: 22%; margin-top: 5%;">
             EXAMPLES
         </p>
@@ -119,24 +84,12 @@
         <div style="display: flex; flex-direction: column; gap: 0px;">
             <div class="infobox">
                 <p style="margin-left: 2%;">
-                    Shows a list of recipes that you can pick from to view
+                    Refreshes all recipes in the recipe index
                 </p>
             </div>
             <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                 <p style="margin-left: 2%;">
-                    list-recipes
-                </p>
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 0px;">
-            <div class="infobox" style="margin-top: -2%;">
-                <p style="margin-left: 2%;">
-                    Displays the recipe named recipe1
-                </p>
-            </div>
-            <div class="codebox" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                <p style="margin-left: 2%;">
-                    view-recipe recipe1
+                    refresh-recipes
                 </p>
             </div>
         </div>
