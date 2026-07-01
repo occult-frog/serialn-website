@@ -15,11 +15,10 @@
             .codebox {
                 display: flex;
                 flex-direction: row;
-                margin-left: 22%;
                 height: 6ch;
                 color: #E7EDF2;
                 background-color: #171B21;
-                width: 56%;
+                width: 100%;
                 align-items: center;
                 font-family: JetBrainsMono;
                 font-size: 15px;
@@ -91,5 +90,29 @@
         <p style="color: #E7EDF2; font-size: 30px; margin-left: 20%; font-family: JetBrainsMonoBold;">
                 Install serialn
         </p>
+        <p style="color: #8D949D; font-size: 15px; margin-left: 20%; font-family: JetBrainsMono; margin-bottom: 4%; margin-right: 20%;">
+                serialn is built for Macs with an Apple Silicon chip. You can use Method 1 to install it on Windows 11 but there is no guarantee it will work properly.
+        </p>
+        <hr style="width: 60%; border: none; border-top: 1px solid #31363C;">
+        <p style="color: #E7EDF2; font-size: 20px; margin-left: 20%; font-family: JetBrainsMonoBold;">
+                Method 1:
+        </p>
+        <ol style="color: #8D949D; font-size: 15px; margin-left: 20%; font-family: JetBrainsMono; margin-bottom: 4%; margin-right: 20%;">
+            <li>Install python</li>
+            <li>Go to github.com/occult-frog/serialn</li>
+            <li>Click the green code button at the top and click "Download ZIP"</li>
+            <li>Unzip the file you just downloaded</li>
+            <li>Open terminal and navigate to the unzipped folder</li>
+            <li>
+                Run
+                <br>
+                <div class="codebox" style="border-radius: 5px;">
+                    <p style="margin-left: 2%;">
+                        pip3 install -e .
+                    </p>
+                </div>
+            </li>
+            <li>Now you can open a new terminal window and run commands. You don't need to add the "./serialn" prefix as in the example videos.</li>
+        </ol>
     </body>
 </html>
